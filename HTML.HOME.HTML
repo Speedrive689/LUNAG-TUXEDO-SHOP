@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Homepage</title>
+    <style>
+ #outerbox {
+            width: 450px;
+            overflow: hidden;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            background-size: cover;
+            background-position: center; 
+            width: 450px;
+            margin: 50px auto;
+
+        }
+
+        #sliderbox {
+            position: relative;
+            display: flex;
+            width: 4500px;
+            height: 450px;
+            animation: slider 45s infinite;
+        }
+
+        @keyframes slider {
+
+            0%,
+            10% {
+                left: 0;
+            }
+
+            12.5%,
+            22.5% {
+                left: -450px;
+            }
+
+            25%,
+            35% {
+                left: -900px;
+            }
+
+            37.5%,
+            47.5% {
+                left: -1350px;
+            }
+
+            50%,
+            60% {
+                left: -1800px;
+            }
+
+            62.5%,
+            72.5% {
+                left: -2250px;
+            }
+
+            75%,
+            85% {
+                left: -2700px;
+            }
+
+            87.5%,
+            97.5% {
+                left: -3150px;
+            }
+
+            100% {
+                left: -3600px;
+            }
+        }
+
+        #sliderbox img {
+            width: 450px;
+            height: 450px;
+            align-items: center;
+            justify-content: center;
+            
+        }
+
+ body {
+            font-family:cursive;
+            margin: 0px 100px 0px 100px;
+            padding: 0;
+            background-color: #fff;
+        }
+        .header {
+            background-color: hwb(101 8% 5%);
+            color: #070707;
+            padding: 10px 0;
+            text-align: center;
+        }
+        img{
+            width: 700px;
+            height: 700px;
+            length:100px;
+            margin: 0px;
+            
+
+        }
+        .nav {
+            display: flex;
+            justify-content: center;
+            background-color: hsl(0, 0%, 8%);
+        }
+        .nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        .nav a:hover {
+            background-color: #555;
+        }
+        .main {
+            padding: 20px;
+            text-align: center;
+        }
+        .dropdown-btn {
+    background-color: #e7bd8a;
+    color: #9e5002;
+    font-family: cursive;
+    padding: 14px 20px;
+    font-size: 16px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    justify-content: center;
+}
+
+.dropdown-btn:hover {
+    background-color: #b18c66;
+}
+
+
+.dropdown-content {
+    display: none; 
+    position: absolute;
+    background-color: #e7bd8a;
+    min-width: 100px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #9e5002;
+    padding: 5px 28px;
+    text-decoration: none;
+    display: block;
+    font-size: 11.5px;
+    white-space: nowrap;
+}
+
+.dropdown-content a:hover {
+    background-color: #e7a562;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+        .footer {
+            background-color: skyblue;
+            color:#070707;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+
+        }
+
+        .content{
+          width: 700%;
+          height: 700px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>LUNAG TUXEDOS SHOP</h1>
+    </div>
+    <div class="nav">
+        <a href="c:\Users\HP\Desktop\joy.website\HTML.HOME.HTML">Home</a>
+        <a href="f:\joy.website\FORMAL.HTML.HTML">Product</a>
+        <div class="dropdown">
+            <button class="dropdown-btn">Categories</button>
+            <div class="dropdown-content">
+                <a href="categ.html">wedding</a>
+                <a href="categ.2.html">prom or debut</a>
+                <a href="categ.3.html">quinceanera and cotillion</a>
+                <a href="categ4.html">formal dinner and boquets</a>
+            </div>
+        </div>
+
+        <a href="">About Me</a>
+    </div>
+    <div>
+ <center><h3>TUXEDOS ARE TIMELESS AND SYMBOLIZE SOPHISTICATION AND ELEGANCE.</h3></center>
+        
+        <div id="outerbox">
+            <div id="sliderbox">
+                <img src="https://th.bing.com/th/id/OIP.dFaHaFqUU3rBSXotF1aSjgHaLH?w=1000&h=1500&rs=1&pid=ImgDetMain" alt="Product Image">
+                <img src="https://i.pinimg.com/736x/49/aa/1c/49aa1cade7461c7089196ee9f7e52877--dc-weddings-classic-weddings.jpg" alt="Product Image">
+                <img src="https://th.bing.com/th/id/OIP.BN5s0eiXT6QzUsADVjQ-zgAAAA?pid=ImgDet&w=187&h=280&c=7" alt="Product Image">
+                <img src="https://th.bing.com/th/id/OIP.GOf4sBjVZ5-G7mC4vgRIYwHaJ4?pid=ImgDet&w=187&h=249&c=7" alt="Product Image">
+                <img src="https://cdn.shopify.com/s/files/1/1025/3059/products/PREMIUM__NOTCH_TUXEDO_116_1200x1200.jpg?v=1608598325" alt="Product Image">
+                <img src="https://th.bing.com/th/id/OIP.QYB5j--RJZvNKgBNTO5nLAHaJ5?pid=ImgDet&w=187&h=250&c=7" alt="Product Image">
+                <img src="https://th.bing.com/th/id/OIP.WqvBRB8JHHX93JIt_VFolAHaLG?w=187&h=280&c=7&r=0&o=5&pid=1.7" alt="Product Image">
+                <img src="https://th.bing.com/th/id/OIP.wQa1tuFa6mfUSvdUjxwq_QHaLG?w=187&h=280&c=7&r=0&o=5&pid=1.7" alt="Product Image">
+                <img src="https://th.bing.com/th/id/OIP.WAz-2fm4E76LBEEBpDjJ7AHaLH?w=187&h=280&c=7&r=0&o=5&pid=1.7" alt="Product Image">
+                <img src="https://th.bing.com/th/id/OIP.sKn-X7fy2KTKV9uFDXVwXAHaNK?w=187&h=333&c=7&r=0&o=5&pid=1.7" alt="Product Image">
+              
+
+            </div>
+        </div>
+
+        
+        <div class="content"></div>
+        <div class="footer">
+            <p>&copy; All rights reserved.</p>
+        </div>
+    
+    </body>
+    </html>

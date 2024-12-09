@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+</head>
+<style>
+    body{
+        font-family: cursive;
+        margin: 0;
+        padding: 0;
+        color: #9e5002;
+        scroll-behavior: smooth;
+    }
+    header{
+        background:#09db1b ;
+        background-image: url('nice-wood-kitchen_1048-4893.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: background-image 0.5 ease;
+        color:hsl(0, 0%, 0%);
+        text-align: center;
+        text-shadow: 4px 4px 10px hsl(0, 3%, 7%) ;
+        padding: 2px 20px 5px 0px;
+        position: relative;
+        overflow: hidden;
+        font-style: italic;
+    }
+    header .hero h1 span{
+        font-size: 40px;
+        color: hsl(0, 0%, 0%);
+        font-style: italic;
+        text-shadow: 4px 4px 10px #852c03 ;
+
+    }
+    header .hero p{
+        font-size:23px;
+    }
+    header .btn{
+        display: inline-block;
+        margin-top: 0;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        padding: 10px 25px;
+        background:hwb(0 0% 100%);
+        color:#070707;
+        text-decoration: none;
+        font-weight: bold;
+        text-shadow: 4px 4px 10px #852c03 ;
+        border-radius: 5px;
+        transition: background 0.3s ease,transform 0.3s ease;
+    }
+    header .btn:hover{
+        
+        color:hsl(0, 0%, 2%);
+        transform: scale(1.1);
+    }
+
+    header .btn:hover{
+        background-color:#9e5002;
+    }
+    .btn{
+        font-family:cursive;
+    }
+
+
+    
+    nav ul{
+        list-style: none;
+        margin: 0;
+        padding: 1px 15px;
+        display: flex;
+        justify-content: center;
+        background: hsl(0, 0%, 7%);
+    }
+    nav ul li{
+        margin:10px 15px;
+       
+        
+    }
+    nav ul li a{
+        color: #9e5002;
+        text-decoration: none;
+        font-size: 1.2rem;
+        transition: color o.3s ease;
+        font-size: 18px;
+    }
+    nav ul li a:hover{
+        color: #552c04;
+        
+    }
+    .section{
+        padding: 50px 20px;
+        text-align: center;
+        background-image: url('1483382.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: background-image 0.5 ease;
+        margin: 20px 0;
+        opacity: 0;
+        transform: translateY(30px);
+        animation: slidein 1s ease-in-out forwards;
+    }
+    .projects{
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        flex-wrap: wrap;
+    }
+    .projects h3{
+        color: #000000;
+        font-size: 18px;
+
+    }
+    h2{
+        color: hwb(0 0% 100%);
+        text-shadow: 4px 4px 10px #000000 ;
+    }
+    p{
+        color: hsl(0, 69%, 39%);
+        font-size: 19px;
+        text-shadow: 4px 4px 10px #852c03 ;
+    }
+    .project-card{
+        background: hsl(138, 98%, 48%);
+        color: #9e5002;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px  rgb(0,0,0,0.1);
+        transition: transform 0.9 ease,box-shadow 0.6s ease;
+        width: 300px;
+    }
+    .hero a{
+        color:white;
+    }
+   
+    .project-card:hover{
+        transform: scale(1.05);
+        box-shadow: 0 8px 20px rgb(0,0,0,0.2);
+    }
+    .dropdown-btn {
+    background-color: hsl(118, 100%, 43%);
+    color: #9e5002;
+    font-family: cursive;
+    text-align: center;
+    padding: 11px 15px;
+    font-size: 18px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    justify-content: center;
+    
+}
+
+.dropdown-btn:hover {
+    background-color: hwb(0 96% 4%);
+}
+
+
+.dropdown-content {
+    display: none; 
+    position: absolute;
+    background-color: hsl(103, 94%, 47%);
+    min-width: 100px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #9e5002;
+    padding: 5px 10px;
+    text-decoration: none;
+    display: block;
+    font-size: 12.5px;
+    white-space: nowrap;
+    text-align: centers;
+}
+
+.dropdown-content a:hover {
+    background-color: hsl(128, 87%, 43%);
+    max-width: 100%;
+
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+    @keyframes fadein{
+        from{
+            opacity: 0;
+            transform: translateY(-30px);
+        }
+        to{
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    @keyframes slidein{
+        from{
+            opaity:0;
+            transform: translateY(30px);
+        }
+        to{
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    .thumbnail-gallery {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+            margin-top: 10px;
+            margin-left: 50px;
+            
+        }
+
+        .thumbnail {
+            overflow: hidden;
+            border-radius: 8px;
+            transition: transform 0.3s;
+            width: 200px;
+            height: 205px;
+            position: relative;
+            margin-bottom: 10px;
+        }
+
+        .thumbnail img {
+            width: 100%;
+            height: 100%;
+            display: block;
+
+        }
+
+        .thumbnail:hover {
+            transform: scale(1.1);
+        }
+
+    footer{
+        background-image: url('nice-wood-kitchen_1048-4893.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: background-image 0.5 ease;
+        color: hsl(0, 0%, 0%);
+        text-align: center;
+        padding: 20px;
+        text-shadow: 4px 4px 10px hsl(0, 0%, 0%) ;
+    }
+    @media(max-width:768px){
+        .projects{
+            flex-direction: column;
+            align-items: center;
+        }
+        .project-card{
+        width: 90%;
+    }
+    }
+    .section slide-in p{
+        font-size: 15px;
+        
+    }
+</style>
+<body>
+    <header>
+
+        <div class="hero">
+            <h1 class="fade-in">Welcome to<span>&nbsp;LUNAG TUXEDOS SHOP!</span></h1>
+            <p class="fade-in">TUXEDOS ARE TIMELESS AND SYMBOLIZE SOPHISTICATION AND ELEGANCE.</p>
+            <a href="#about" class="btn">Discover More</a>
+        </div>
+    </header>
+    <nav>
+       <ul>
+        <li><a href="c:\Users\HP\Desktop\joy.website\HTML.HOME.HTML">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+       </ul>
+    </nav>
+    <section id="about" class="section slide-in">
+        <h2>About Us</h2> 
+        <p>Welcome to Tuxedos,A tuxedos also known as a dinner suit,is a formal mens outfit tradionally worn for evening events or occation.</p>
+    </section>
+    <section id="mission" class="section slide-in">
+        <h2>Mission</h2>
+        <p> our mission is to provide exceptional formalwear that empowers individuals to feel confident and sylish for lifes most memorable moments.we are committed to offering hight quality tuxedos,personalizedservice,and epert advice to ensure every customer looks and feels thier best at every special occation.</p>
+    </section>
+    <section id="products" class="section slide-in">
+        <div class="thumbnail-gallery">
+            <div class="thumbnail"><img src="https://th.bing.com/th/id/OIP.hcd2PzkdxmMoa5ZGWBBjZAHaJa?pid=ImgDet&w=204&h=259&c=7&dpr=1.1" alt="Thumbnail 1">
+                <div class="description">wedding1</div>
+            </div>
+            <div class="thumbnail"><img src="https://th.bing.com/th/id/OIP.WqvBRB8JHHX93JIt_VFolAHaLG?w=187&h=280&c=7&r=0&o=5&pid=1.7" alt="Thumbnail 2">
+                <div class="description">wedding12</div>
+            </div>
+            <div class="thumbnail"><img src="https://th.bing.com/th/id/OIP.oFDAoQtUYKQBoJMUWhgyWwAAAA?pid=ImgDet&w=204&h=231&c=7&dpr=1.1" alt="Thumbnail 3">
+                <div class="description">wedding1 3</div>
+            </div>
+            <div class="thumbnail"><img src="https://th.bing.com/th/id/OIP.AXK1Cr7sN1ms7En8NiA7RgHaJI?pid=ImgDet&w=204&h=252&c=7&dpr=1.1" alt="Thumbnail 4">
+                <div class="description">wedding4</div>
+            </div>
+            <div class="thumbnail"><img src="https://th.bing.com/th/id/OIP.OSspMcJa5MXV1LBgaXRj_QHaKL?pid=ImgDet&w=204&h=280&c=7&dpr=1.1" alt="Thumbnail 5">
+                <div class="description">wedding 5</div>
+            </div>
+        </div>
+        </section>
+        <section id="projects" class="section slide-in">
+            <h2>Projects</h2>
+            <div class="projects">
+                <div class="project-card hover-grow">
+                    <p>creating unique line of modern  or classic tuxedos.</p>
+                </div>
+                <div class="project-card hover-grow">
+                    <p> developing eco-friendly tuxedos.</p>
+                </div>
+                <div class="project-card hover-grow">
+                    <p>exploring global variation of formal attire.</p>
+                </div> 
+            </div>
+        </section>
+    
+    <section id="contact" class="section slide-in">
+        <h2>Contact Us</h2>
+        <p>our service is to provide high-quality and excellent craftsmanship for our tailor-made suits/tuxedos</p>
+        <p>Contact us on:</p>
+        <p>Email:lunagtuxedos.lunagshop98@gmail.com</p>
+        <p>Phone:09367865124</p>
+    </section>
+    <footer>
+        <p>&copyCopyright 2024. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
+
